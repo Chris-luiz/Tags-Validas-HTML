@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function abrirdialog(){
+            document.getElementById("d1").setAttribute("open", "");
+        }
+        function fecharrdialog(){
+            document.getElementById("d1").removeAttribute("open");
+        }
+    </script>
+</head>
+<body>
+    <!--Abre o conteudo como uma caixa de dialog-->
+    <!--Possui o atributo Open que é Boolean-->
+    <!--Comumente utilizado com JavaScript-->
+    
+    <button onclick="abrirdialog()">abrir</button>
+    <button onclick="fecharrdialog()">fechar</button>
+    <dialog id="d1" open>
+        <p><dfn title="Linguagem de Marcação Web">HTML</dfn> Hypertext Markup Language é uma linguagem de marcação utilizada na construção de páginas Web</p>
+        <p><abbr title="Formatação Para Páginas Web">CSS</abbr> Cascading Style Sheets recurso para adicionar estilos/formatações a um documento Web</p>
+    </dialog>
+    
+</body>
+</html>

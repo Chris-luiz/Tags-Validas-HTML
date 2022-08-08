@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        pre{
+            border:1px solid #000;
+            padding: 10px;
+            border-radius:10px ;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <!--A Tag Pre irá escrever o texto da mesma forma como foi digitado no Código-->
+    <!--A Tag Code irá destacar um texto que seria um exemplo de codigo de progrmação-->
+    <p>Conteudo do codigo abaixo</p>
+    <pre>
+        <code>
+            #include &lsaquostdio.h&lsaquo
+            main(){
+                int vet[4];	
+                int *ptr=vet;
+                for(int i=0;i<4;i++){
+                    printf("Informe o valor %d: ", i);              
+                    scanf("%d", &vet[i]);
+                }
+                int *ptrmenor=vet;
+                int *ptrmaior=vet;
+
+                for(int i=0;i<4;i++){
+                    if(vet[i]<*ptrmenor){
+                        ptrmenor=&vet[i];
+                    }
+                    if(vet[i]>*ptrmaior){
+                        ptrmaior=&vet[i];
+                    }
+                }				
+            }
+        </code>
+    </pre>
+</body>
+</html>

@@ -1,0 +1,25 @@
+table{
+    width: 1000px;    
+    border-collapse: collapse;
+}
+
+td{
+    padding: 10px;
+    border: 1px solid black;
+}
+
+th{
+    border: 1px solid #000;
+    background-color: rgb(170, 167, 163);
+}
+tbody tr{
+    background-color: rgb(118, 158, 204);
+}
+
+tr:hover{
+    background-color: rgb(3, 51, 90);
+}
+tfoot{
+    background-color: rgb(170, 167, 163);
+    text-align: center;
+}

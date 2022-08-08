@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        iframe{
+            width: 750px;
+            height: 800px;
+            display: inline-flex;
+        }
+    </style>
+</head>
+<body>
+    <!--Janela contendo o conteudo de outra pagina HTML-->
+    <!--Parametro Sandbox desabilida os recursos do Iframe-->
+    <!--Para habilitar os script, formularios, etc, utilize "allow-xxxxx"-->
+    <!--Link podem ser abertor dentro de Iframes, para isso o Iframe deve possuir um nome e o Link deve possuir um Target-->
+    
+    <a href="audio.html" target="main">Link de audio</a> <br>
+    <a href="button.html" target="main">Link de botão</a><br>
+    <a href="code e pre.html" target="main">Link de code</a><br>
+    <a href="forms.html" target="main">Link de Form</a><br>
+    <iframe src="forms.html" frameborder="10" name="main"></iframe>
+</body>
+</html>

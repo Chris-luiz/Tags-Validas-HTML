@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>    
+        ol ol{
+            border: none;
+        }
+        a{
+            color: rgb(15, 54, 124);
+            font-size: 15px;
+            font-style: italic;
+            font-weight: bold;
+        }
+        div{
+            border:5px solid rgba(77, 77, 77, 0.966);
+            border-radius: 5px;
+            background-color: rgb(218, 220, 221);
+        }
+        li{
+            font-size: 15px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: rgb(1, 37, 104);
+        }
+    </style>
+</head>
+<body>
+    <!--OL: Utilziada para criar listas ordenadas-->
+    <!--OL é a arvore-->
+    <!--LI é o conteudo das listas-->
+    <!--Parametro Start: Informa de qual posição a lista deve começar-->
+    <!--Parametro Reversed: Inverte a numeração da lista-->
+    <!--Parametro Type: Informa o marcador da lista-->
+    <!--Type 1: Ordenação com Números-->
+    <!--Type A: Ordenação com Letras Maiusculas-->
+    <!--Type a: Ordenação com Letras Minusculas-->
+    <!--Type I: Ordenação com Algarismos Romanos Maiusculas-->
+    <!--Type i: Ordenação com Algarismos Romanos Minusculos-->
+
+    <h1>Lista Ordenada</h1>
+    <div> 
+        <ol start="1" type="1">
+            <li>Pokemon</li>
+            <ol>
+                <li><a href="https://pt.wikipedia.org/wiki/Pok%C3%A9mon_Black_e_White" target="_blank">Pokemon Black</a></li>
+                <li><a href="https://pt.wikipedia.org/wiki/Pok%C3%A9mon_Crystal" target="_blank">Pokemon Cristal</a></li>
+                <li><a href="https://pt.wikipedia.org/wiki/Pok%C3%A9mon_Red_%26_Blue" target="_blank">Pokemon Red</a></li>
+            </ol>
+            <li class="li">Resident Evil</li>
+            <ol>
+                <li><a href="https://pt.wikipedia.org/wiki/Resident_Evil_4" target="_blank">Resident evil 4</a></li>
+                <li><a href="https://pt.wikipedia.org/wiki/Resident_Evil"   target="_blank">Resident evil 1</a></li>
+                <li><a href="https://pt.wikipedia.org/wiki/Resident_Evil_2" target="_blank">Resident evil 2</a></li>
+                <li><a href="https://pt.wikipedia.org/wiki/Resident_Evil_3" target="_blank">Resident evil 3</a></li>
+            </ol>
+            <li class="li">Megaman X</li>
+            <ol>
+                <li><a href="https://en.wikipedia.org/wiki/Mega_Man_X8" target="_blank">Megaman Zero X8</a></li>
+                <li><a href="https://pt.wikipedia.org/wiki/Mega_Man_Zero_3" target="_blank">Megaman Zero Zero 3</a></li>
+                <li><a href="https://pt.wikipedia.org/wiki/Mega_Man_7" target="_blank">Megaman Zero 7</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Mega_Man_ZX" target="_blank">Megaman Zero ZX</a></li>
+                <li><a href="https://pt.wikipedia.org/wiki/Mega_Man_X" target="_blank">Megaman Zero X</a></li>
+            </ol>
+            <li class="li">The Legend Of Zelda</li>
+            <ol>
+                <li><a href="https://pt.wikipedia.org/wiki/The_Legend_of_Zelda_(jogo_eletr%C3%B4nico)" target="_blank">The Legend of Zelda (NES)</a></li>
+                <li><a href="https://pt.wikipedia.org/wiki/The_Legend_of_Zelda:_A_Link_to_the_Past" target="_blank">The Legend of Zelda - A Link to the Past</a></li>
+                <li><a href="https://pt.wikipedia.org/wiki/The_Legend_of_Zelda:_Ocarina_of_Time" target="_blank">The Legend of Zelda - Ocarina of Time</a></li>
+                <li><a href="https://pt.wikipedia.org/wiki/The_Legend_of_Zelda:_Majora%27s_Mask" target="_blank">The Legend of Zelda - Majoras Mask</a></li>
+            </ol>
+        </ol>
+    </div>
+   
+
+    <!--UL: Utilizada para criar listas desordenadas--> 
+    <!--Marcadores podem ser-->
+    <!--Parametro Type: Informa o marcador da lista-->
+    
+    <h1>Lista Desordenada</h1>
+    <ul type="square">
+        <li>Serial Experiments Lain</li>
+        <li>Evangelion</li>
+        <li>Akira</li>
+        <li>Cowboy Bebop</li>
+        <li>Perfect Blue</li>
+        <li>Tenshi no Tamago</li>
+        <li>Ergo Proxy</li>
+        <li>Devilman Crybaby</li>
+    </ul>
+</body>
+</html>

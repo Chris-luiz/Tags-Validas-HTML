@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            border: 1px solid black;
+            border-radius: 15px;
+            padding: 10px;
+            background-color: rgb(202, 201, 201);
+        }
+        .quebra{
+            display:block;
+            margin-bottom: 15px;
+        }
+        #button{
+            display: flex;
+        }
+        .margin{
+            margin-bottom: 1px;
+            margin-top: 10px;
+        }
+        fieldset{
+            margin-bottom: 15px;
+            border-radius: 20px;
+            border: 1px solid black;
+            background-color: rgb(226, 226, 226);
+        }
+        legend{
+            border: 1px solid black;
+            background-color: rgb(226, 226, 226);
+        }
+    </style>
+</head>
+<body>
+    <!--Tag de Formulário-->
+    <!--Seus atributos são Action, Autocomplete, Enctype, Method, Name, Novalidate e Target-->
+    <!--Action: URL com o arquivo que irá receber os dados enviados-->
+    <!--Autocomplete: Autocompletar campos ativados-->
+    <!--Enctype: Condificação (tipo) dos arquivos enviados-->
+    <!--Method: Metodo de envio dos dados (GET E POST)-->
+    <!--Name: Nome do formulario-->
+    <!--Novalidate: Desabilita a validação pelo Browser-->
+    <!--Target: Como a pagina de destino (Action) será aberta-->
+
+    <!--Tag Input possui varios parametros-->
+    <!--Label funciona como uma etiqueta para o input-->
+    <!--o atributo For indica para qual input o label se refere-->
+
+    <!--Inputs Submit, Reset e Button se assemelham à tag Button e possuem as mesmas propriedades-->
+    <!--Submit envia o conteudo para o PHP utilizando o Action e Method do Form-->
+    <!--Reset limpa os valores do formulário-->
+    <!--Button deve ser configurado usando javascript-->
+
+    <!--Maxlength determina o tamanho maximo de caracteres dentro de um input-->
+    <!--Size determina quantos caracteres aparecerão no input-->
+    <!--Required Obriga o atributo a ser preenchido-->
+    <!--Pattern cria um padrão quue o input deverá seguir-->
+    <!--Multiple permite ao Type File enviar mais de um arquivo-->
+    
+    <!--Type Password: Utilizado para senhas-->
+    <!--Type Checkbox: Caixa de seleção-->
+    <!--Type Radio: Duas ou mais caixas com o mesmo nome conectadas onde somente uma resposta é enviada-->
+    <!--Type Time: Especifico para Horas -- Min e Max habilitado-->
+    <!--Type Date: Especifico para Datas -- Min e Max habilitado-->
+    <!--Type Month: Especifico para Meses-->
+    <!--Type Week: Especifico para Semanas-->
+    <!--Type Hidden: Usado para fazer passagem de valores-->
+    <!--Type Color: Usado para escolher uma cor-->
+    <!--Type Email: Especifico para Emails-->
+    <!--Type Image: A Imagem é selecionada usando Src e funciona como um botão de submit-->
+    <!--Type Tel: Especifico para Telefone -- Uso Pattern é interessante-->
+    <!--Type Number: Especifico para Numeros-->
+    <!--Type Search: Utilizado para pesquisa com PHP ou JavaScript-->
+    <!--Type File: Envia um arquivo para o PHP-->
+    <!--Type URL: Utilizado para enviar URL-->
+
+    <!--Select cria uma barra de opções para ser selecionada-->
+    <!--Select é a arvore-->
+    <!--Option fará a função de apresentar as opões-->
+
+    <!--List e Datalist funcionam como Select, mas permitem escrita para localizar a opção-->
+
+    <!--Fieldset cria um campo de formulario focado em um grupo de informações-->
+    <!--Possui o atributo Disable, que desabilita todos os campos dentros do Fieldset-->
+
+    <!--TextArea é um bloco de texto multilinha-->
+    <!--Autofocus: Input já carrega com cursor-->
+    
+    <form action="" name="" method="">
+
+        <fieldset>
+            <legend>Campo 1</legend>
+            <label for="nome">Username:</label>
+            <input type="text" name="nome" class="quebra" placeholder="Seu nome...">
+
+            <label for="senha">Senha:</label>
+            <input type="password" name="senha" pattern="[a-zA-Z0-9]{8}" class="quebra" maxlength="8" size="16" placeholder="Sua Senha..." >
+        </fieldset>
+
+        <fieldset>
+            <legend>Campo 2</legend>
+            <label for="" class="quebra margin">Quais Idiomas Você fala?</label>
+            <input type="checkbox" name="Inglês" value="Inglês"> Inglês
+            <input type="checkbox" name="Francês" value="Francês"> Francês
+            <input type="checkbox" name="Espanhol" value="Espanhol"> Espanhol
+            <input type="checkbox" name="Alemão" value="Alemão"> Alemão
+    
+            <label for="" class="quebra margin">Qual seu sexo?</label>
+            <input type="radio" name="carro" value="Masculino">Masculino
+            <input type="radio" name="carro" value="Feminino">Feminino
+        </fieldset>
+
+        <fieldset disabled>
+            <legend>Campo 3</legend>
+            <label for="" class="quebra margin">Que Horas São?</label>
+            <input type="time" min="09:00" max="20:00" >
+    
+            <label for="" class="quebra margin">Informe a Data</label>
+            <input type="date">
+    
+            <label for="" class="quebra margin">Informe o Mes</label>
+            <input type="month" name="" id="">
+    
+            <label for="" class="quebra margin">Informe a Semana</label>
+            <input type="week">
+        </fieldset>
+
+        <fieldset>
+            <legend>Campo 4</legend>
+            <input type="hidden" name="form1" value="Form1">
+            <input type="hidden" name="form2" value="Form2">
+    
+            <label for="" class="quebra margin">Selecione uma Cor</label>
+            <input type="color">
+    
+            <label for="" class="quebra margin">Informe seu Email</label>
+            <input type="email">
+    
+            <label for="" class="quebra margin">Adicione uma Imagem</label>
+            <input type="image">
+    
+            <label for="" class="quebra margin">Informe o Número de Telefone</label>
+            <input type="tel" pattern="\([0-9]{2}\)[9]{1}[0-9]{4}-[0-9]{4}" maxlength="14" placeholder="(xx)9xxxx-xxxx" >
+    
+            <label for="" class="quebra margin">Informe um Numero</label>
+            <input type="number">
+    
+            <label for="" class="quebra margin">Faça uma pesquisa</label>
+            <input type="search">
+            
+            <label for="" class="quebra margin">Informe um Arquivo</label>
+            <input type="file" multiple>
+    
+            <label for="" class="quebra margin">Informe um URL</label>
+            <input type="url">
+        </fieldset>
+
+        <fieldset>
+        <legend>Campo 5</legend>
+        <label for="Estado" class="quebra margin">Informe Seu Estado
+            <select name="Estado" id="Estado">
+                <option value=""></option>
+                <option value="Acre">Acre</option>
+                <option value="Alagoas">Alagoas</option>
+                <option value="Amapa">Amapa</option>
+                <option value="Amazonas">Amazonas"</option>
+                <option value="Bahia">Bahia</option>
+                <option value="Ceará">Ceará</option><option value="Acre">Acre</option>
+                <option value="Espirito Santo">Espirito Santo</option>
+                <option value="Goiás">Goiás</option>
+                <option value="Maranhão">Maranhão"</option>
+                <option value="Mato Grosso do Sul">Mato Grosso do Sul</option>
+                <option value="Minas Gerais">Minas Gerais</option>
+                <option value="Pará">Pará</option>
+                <option value="Paraiba">Paraiba</option>
+                <option value="Paraná">Paraná</option>
+                <option value="Pernambuco">Pernambuco"</option>
+                <option value="Rio de Janeiro">Rio de Janeiro</option>
+                <option value="Rio Grande do Norte">Rio Grande do Norte</option>
+                <option value="Rio Grande do Sul">Rio Grande do Sul</option>
+                <option value="Rondônia">Rondônia</option>
+                <option value="Roraima">Roraima</option>
+                <option value="Santa Catarina" >Santa Catarina"</option>
+                <option value="Sao Paulo">Sao Paulo</option>
+                <option value="Sergipe">Sergipe</option>
+                <option value="Tocantins">Tocantins</option>
+                <option value="Distrito fideral">Distrito Federal</option>
+            </select>
+
+            <label for="f_cor" class="quebra margin">Lista
+            <input list="f_cores" name="f_cor">
+            <datalist id="f_cores">
+                <option value="red">vermelhos</option>
+                <option value="green">verde</option>
+                <option value="blue">azul</option>
+                <option value="yellow">amarelo</option>
+                <option value="black">preto</option>
+                <option value="white">branco</option>
+            </datalist>
+
+            <label for="" class="quebra margin">Fale Sobre Você</label>
+            <textarea name="voce" id="voce" cols="150" rows="10"></textarea>
+        </fieldset>
+        
+        <fieldset>
+            <div id="button">
+                <input type="submit">
+                <input type="reset">
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
